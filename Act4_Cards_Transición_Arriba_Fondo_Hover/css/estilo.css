@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	/*definimos el tamaño mínimo
+	del body con unidad de medida view high
+	la altura del dispositivo*/
+	min-height: 100vh;
+	/*background-color: #B16464;*/
+
+	font-family: 'Poppins', sans-serif;
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+
+	padding: 20px;
+}
+
+header h1{
+	font-family: 'Fredoka One', cursive;
+	color: black;
+	font-size: 50px;
+}
+
+.contenedor{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 1200px;
+	width: 100%;
+	margin: auto;
+	flex-wrap: wrap;
+}
+
+.contenedor .card{
+	position: relative;
+	width: 320px;
+	height: 440px;
+	border-radius: 15px;
+	margin: 30px;
+
+	/* definimos un sombreado para 
+	simular el borde de la caja exterior
+	*/
+	box-shadow: inset 5px 5px 5px rgba(0,0,0,0.08);
+}
+
+.contenedor .card .box{
+	position: absolute;
+
+	top: 20px;
+	left: 20px;
+	right: 20px;
+	bottom: 20px;
+
+	border-radius: 15px;
+
+	
+	box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: #EAD9D9;
+
+	transition: 0.5s;
+}
+
+/*añadimos animación*/
+.contenedor .card:hover .box{
+	transform: translateY(-50px);
+	/*box-shadow: 0 10px 20px rgba(0,0,0,0.3);*/
+	background: linear-gradient(to bottom, #DB0080 0%, #019CDF 100%, #FFF001 100%);
+}
+
+.contenedor .card .box .contenido{
+	text-align: justify;
+	padding: 20px;
+	transform: translateY(50px);
+}
+
+.contenedor .card .box .contenido h2{
+	position: absolute;
+
+	/* posicionamiento del elemento*/
+	top: -50px;
+	right: 30px;
+
+	
+	font-size: 8em;
+	color: rgba(0,0,0,0.1);
+
+	transition: 0.5s;
+}
+
+.contenedor .card:hover .box .contenido h2{
+	color: rgba(0,0,0,0.3);
+	color: #FFFFFF;
+	transform: translateY(-80px);
+}
+
+.contenedor .card .box .contenido h1{
+	font-size: 1.8em;
+
+	color: #777;
+
+	z-index: 1;
+
+	transition: 0.5s;
+}
+
+.contenedor .card:hover .box .contenido h1{
+	color: #FFFFFF;
+}
+
+.contenedor .card .box .contenido p{
+	font-size: 1em;
+	font-weight: 300;
+	color: #777;
+
+	z-index: 1;
+
+	transition: 0.5s;
+}
+
+.contenedor .card:hover .box .contenido p{
+	color: #FFFFFF;
+}
+
+.contenedor .card .box .contenido a{
+	position: relative;
+
+	display: inline-block;
+
+	padding: 8px 20px;
+
+	background: #03a9f4;
+
+	margin-top: 25px;
+
+	border-radius: 20px;
+
+	color: #fff;
+
+	text-decoration: none;
+
+	font-weight: 400;
+
+	box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+
+}
+
+
+.contenedor .card:hover .box .contenido a{
+	background-color: #ff568f;
+}

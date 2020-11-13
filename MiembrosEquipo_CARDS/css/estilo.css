@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@700&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	/*height: 100%;*/
+	background-image: linear-gradient(0deg, rgba(35,112,166,1) 0%, rgba(188,217,52,0.87718837535014) 100%);
+	background-size: cover;	
+}
+
+header h1{
+	text-align: center;
+}
+
+
+.container{
+	max-width: 1200px;
+	width: 100%;
+
+	margin: auto;
+
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+
+	/*posicionamiento*/
+	position: relative;
+	top: 90px;
+}
+
+.titulo{
+	font-size: 60px;
+	font-family: 'Atma', cursive;
+
+	text-align: center;
+}
+
+.tarjetas{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.card{
+	width: 300px;
+	height: 400px;
+
+	margin: 0 20px;
+
+	border: 2px solid black;
+	border-radius: 15px;
+
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+
+	background-color: #fff;
+}
+
+.header{
+	display: flex;
+	justify-content: space-between;
+	padding: 12px;
+
+	position: relative;
+	top: -10px;
+}
+
+.main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position:relative;
+	/*top: 60px;*/
+}
+
+.circulo {
+     width: 180px;
+     height: 180px;
+     border-radius: 50%;
+}
+
+.john{
+	background-image: url("../img/person1.jpg");
+    background-size: cover;
+}
+
+.helen{
+	background-image: url("../img/person2.jpg");
+    background-size: cover;
+}
+
+.footer{
+	display: flex;
+	justify-content: space-around;
+	padding: 12px;
+}
+
+.verde{
+	font-size: 1.5em;
+}
+
+.verde:hover{
+	color: #3FC22E;
+	
+	animation: scale-up-center 1s ease;
+}
+
+.corazon{
+	font-size: 1.5em;
+}
+
+.corazon-1{
+	font-size: 1.5em;
+}
+
+
+/* ------------------- */
+/* definimos el icono  */
+/* ------------------- */
+.corazon:before{
+	content: '\f004';
+	font-family: fontAwesome;
+	line-height: 30px;
+	z-index: 1;
+}
+
+.corazon-1:before{
+	content: '\f004';
+	font-family: fontAwesome;
+	line-height: 30px;
+	z-index: 1;
+}
+
+/* ---------------------------------- */
+/* definimos el color al hacer click  */
+/* ---------------------------------- */
+.btn-corazon:checked ~ .corazon:before{
+	color: #e41934;
+}
+
+.btn-corazon-1:checked ~ .corazon-1:before{
+	color: #e41934;
+}
+
+/* ------------------------- */
+/* escondemos el botón check */
+/* ------------------------- */
+.btn-corazon{
+	display: none;
+}
+
+.btn-corazon-1{
+	display: none;
+}
+
+.corazon:hover{
+	animation: scale-up-center .3s ease;
+}
+
+.corazon-1:hover{
+	animation: scale-up-center .3s ease;
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+@media screen and (max-width: 800px){
+
+/*	.titulo{
+		margin-top: 30px;
+		height: 40vh;
+	}*/
+
+	.container{
+		flex-direction: column;
+	}
+
+	.card{
+		margin-top: 30px;
+	}
+}
