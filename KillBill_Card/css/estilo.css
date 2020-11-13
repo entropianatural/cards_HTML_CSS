@@ -1,0 +1,173 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+*{
+	padding: 0;
+	marding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #807373;
+
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+	align-items: center;
+	margin: 30px 0;
+}
+
+.content{
+	max-width: 900px;
+	width: 90%;
+	margin: auto;
+
+	/*FLEX*/
+
+	display: flex;
+	padding: 30px 0;
+}
+
+.alternativo{
+	flex-direction: row-reverse;
+}
+
+.col1{
+	background-image: url("../img/bill.png");
+	background-size: cover;
+	border-radius: 25px 0 0 25px;
+	height: 400px;
+	max-width: 320px;
+	width: 100%;
+}
+
+.img_alt{
+	background-image: url("../img/bill2.jpg");
+	border-radius:  0 25px 25px 0 ;
+}
+
+.col2{
+	background-color: black;
+	border-radius: 0 25px 25px 0;
+	height: 400px;
+	width: 620px;
+}
+
+.ficha_alt{
+	border-radius: 25px 0 0 25px;
+}
+
+
+
+.col2-content{
+
+	font-family: 'Montserrat', sans-serif;
+    font-weight:400;
+
+	padding-left: 40px;
+	color: white;
+
+	display: flex;
+	flex-direction: column;
+
+	align-items: flex-start;
+	
+}
+
+.col2-content p{
+	margin-right: 20px;
+	text-align: justify;
+}
+
+.span-data{
+	display: flex;
+}
+
+.col2-content h1{
+	text-transform: uppercase;
+}
+
+span{
+	margin-right: 20px;
+}
+
+
+.btn-leermas span a{
+	text-decoration: none;
+	color:#ffda00;
+}
+
+.btn-mirarpeli{
+	color:#ffda00;
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+
+	border: 3px solid #ffda00;
+	border-radius: 5px;
+
+	width: 220px;
+	height: 40px;
+
+	margin-top: 20px;
+}
+
+.btn-mirarpeli:hover{
+
+	background-color: #ffda00;
+
+}
+
+
+.btn-mirarpeli:hover > i{
+
+	color: #111;
+	font-weight: 200px;
+
+}
+
+.btn-mirarpeli:hover > span{
+
+	color: #111;
+	font-weight: 200px;
+
+}
+
+@media screen and (max-width: 720px) { 
+
+	.content{
+		transition: all 2s ease ;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.col1{
+		background-image: url("../img/bill.png");
+		background-size: cover;
+		border-radius: 25px 25px 0 0;
+		height: 400px;
+		max-width: 620px;
+		width: 100%;
+	}
+
+	.img_alt{
+		background-image: url("../img/bill2.jpg");
+		border-radius: 25px 25px 0 0;
+	}
+
+	.col2{
+		background-color: black;
+		border-radius: 0 0 25px 25px;
+		height: 400px;
+		width: 100%;
+		max-width: 620px;
+	}
+
+	.col2-content p{
+		margin-right: 40px ;
+	}
+
+
+
+}
