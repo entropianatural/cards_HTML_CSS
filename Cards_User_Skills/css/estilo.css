@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Abel, Arial, Verdana, sans-serif;
+}
+
+.contenedor{
+  max-width: 1200px;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  position: relative;
+  background-color: #A7A1A1;
+
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card{
+  max-width: 600px;
+  width: 100%;
+  background-color: #B66C6C;
+  /*border: 3px dotted black;*/
+  border-radius: 15px;
+
+  display: flex;
+  position: relative;
+}
+
+.cortina{
+  position: absolute;
+  width: 240px;
+  /*width: 100%;*/
+  height: 100%;
+  background-color: salmon;
+  border-radius: 15px 0 0 15px;
+  z-index: 2;
+  transition: width 0.4s;
+}
+
+.card:hover .cortina{
+  width: 100%;
+  border-radius: 15px;
+  color: black;
+  /*font-weight: bold;*/
+}
+
+.cortina h2{
+  position: absolute;
+  top: 10px;
+  left: 393px;
+  z-index: 2;
+  opacity: 0;
+}
+
+.cortina p{
+  text-align: justify;
+  position: absolute;
+  top: 50px;
+  left: 250px;
+  z-index: 2;
+  margin: 20px;
+  opacity: 0;
+}
+
+.cortina .indicadores{
+  position: absolute;
+  bottom: 10px;
+  left: 250px;
+
+  display: flex;
+  /*justify-content: space-between;*/
+  opacity: 0;
+}
+
+.cortina .indicadores .item{
+  margin: 0 15px;
+  color: snow;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px 0;
+}
+
+.cortina .indicadores .item:hover{
+  transition: 0.5s;
+  transform: scale(2) translateY(-10px);
+}
+
+.cortina .indicadores .item img{
+  width: 40%;
+}
+
+.item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* APARECEN EN EL HOVER DEL CARD*/
+.card:hover .cortina > h2{
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.card:hover .cortina > p{
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.card:hover .cortina > .indicadores{
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.col1{
+  background-color: salmon;
+  flex: 1 1 40%;
+  border-radius: 15px 0 0 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.6s;
+  z-index: 3;
+}
+
+.col2{
+  background-color: snow;
+  flex: 1 1 60%;
+  border-radius: 0 15px 15px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 1;
+}
+
+.col2 h2{
+  margin-top: 10px;
+}
+
+.col2 p{
+  margin: 0 20px;
+  text-align: justify;
+}
+
+.col2 span{
+  align-self: flex-end;
+  margin: 20px 20px;
+}
+
+.circulo{
+  margin-top: 20px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-image: url("../img/UserMen.jpg");
+  background-size: cover;
+  box-shadow: -1px -1px 59px 0px rgba(37,49,171,0.75);
+}
+
+.boton{
+  text-decoration: none;
+  color: black;
+
+  display:inline-block;
+  background-color: snow;
+  padding: 10px;
+  border-radius: 10px;
+
+  margin: 15px 0;
+}
