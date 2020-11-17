@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Playfair Display', serif;
+	color: snow;
+}
+
+body{
+	display: flex;
+
+	align-items: center;
+
+	width:  100vw;
+	height: 100vh;
+
+	background-color: #BBA2A2;
+}
+
+header img{
+	padding: 0 10px;
+}
+
+.contenedor{
+	width:  100vw;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.card{
+	position: relative;
+	width: 400px;
+	height: 300px;
+
+	box-shadow: 0 0 15px #000;
+	border-radius: 15px;
+}
+
+.uno{
+	background-image: url("../img/camara.jpg");
+	background-position: center -5px;
+	background-size: cover;
+}
+
+.dos{
+	background-image: url("../img/leica.png");
+	background-position: left -17px bottom 1em;
+	background-size: 108%;
+}
+
+.transparencia{
+	position:relative;
+	width: 100%;
+	height: 100%;
+	background: rgba(77, 77, 77, .0);
+	z-index: 1;
+	transition: all 0.5s;
+
+	border-radius: 15px;
+}
+
+.transparencia h2{
+	font-size: 2.5em;
+    line-height: 40px;
+    position: absolute;
+    margin: 0 20px;
+    top: 60px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.transparencia h3{
+	position: absolute;
+
+	top: 160px;
+	margin: 0 20px;
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.transparencia hr{
+	display:block;
+	position: absolute;
+	top: 170px;
+	width:0;
+	transition: all 0.5s;
+	transition-delay: 0.3s;
+	opacity: 0;
+	margin: 0 20px;
+}
+
+.precios{
+	position: absolute;
+	top: 190px;
+	margin: 0 20px;
+	opacity: 0;
+	transition: all 0.5s;
+
+	display: flex;
+	flex-direction: column;
+
+	font-size: 2em;	
+}
+
+.precios .old{
+	color: rgb(240, 128, 128,0.5);
+	transition: all 0.3s;
+	/*transition-delay: 0.3s;*/
+}
+
+.compra{
+	position: absolute;
+	top: 265px;
+	right: 0;
+	margin-right: 5px;
+	opacity: 0;
+	transition: all 0.5s;
+	padding: 5px;
+}
+
+.compra:hover {
+	background-color:  rgb(124, 252, 0,0.2);
+}
+
+
+.card:hover hr{
+	width:75px;
+	opacity: 1;
+}
+
+.card:hover h2{
+	transform: translateY(-20px);
+	opacity: 1;
+}
+
+.card:hover h3{
+	transform: translateY(-20px);
+	opacity: 1;
+}
+
+.card:hover .precios{
+	opacity: 1;
+}
+
+.card:hover .precios .old{
+	text-decoration:line-through;
+}
+
+.card:hover .compra{
+	opacity: 1;
+}
+
+.card:hover .transparencia{
+	background: rgba(77, 77, 77, .9);
+}
