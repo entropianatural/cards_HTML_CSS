@@ -35,8 +35,8 @@ body{
 	background-image: url("../img/bill.png");
 	background-size: cover;
 	border-radius: 25px 0 0 25px;
-	height: 400px;
-	max-width: 320px;
+	/*height: 400px;*/
+	max-width: 300px;
 	width: 100%;
 }
 
@@ -48,7 +48,7 @@ body{
 .col2{
 	background-color: black;
 	border-radius: 0 25px 25px 0;
-	height: 400px;
+	/*height: 400px;*/
 	width: 620px;
 }
 
@@ -110,7 +110,7 @@ span{
 	width: 220px;
 	height: 40px;
 
-	margin-top: 20px;
+	margin: 20px 0;
 }
 
 .btn-mirarpeli:hover{
@@ -134,7 +134,7 @@ span{
 
 }
 
-@media screen and (max-width: 720px) { 
+@media screen and (max-width: 700px) { 
 
 	.content{
 		transition: all 2s ease ;
@@ -146,9 +146,10 @@ span{
 		background-image: url("../img/bill.png");
 		background-size: cover;
 		border-radius: 25px 25px 0 0;
-		height: 400px;
+		height: 300px;
 		max-width: 620px;
 		width: 100%;
+		/*max-width: 100%;*/
 	}
 
 	.img_alt{
@@ -159,7 +160,7 @@ span{
 	.col2{
 		background-color: black;
 		border-radius: 0 0 25px 25px;
-		height: 400px;
+		/*height: 400px;*/
 		width: 100%;
 		max-width: 620px;
 	}
