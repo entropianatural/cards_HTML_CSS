@@ -82,15 +82,15 @@ h3{
 }
 
 .hr-rosa{
-	color: #DB0080
+	color: #DB0080;
 }
 
 .hr-azul{
-	color: #019CDF
+	color: #019CDF;
 }
 
 .hr-amarillo{
-	color: #FFF001
+	color: #FFF001;
 }
 
 .item:hover hr{
@@ -108,10 +108,14 @@ h3{
 }
 
 footer{
+	/* para que sea una barra fija*/
 	position:fixed;
+
+	/*para que el fondo no pase por encima y la barra siempre esté delante de todo*/
 	z-index: 10;
 
-	bottom: 0;
+	/* para que se ajuste al fondo de cada pantalla*/
+	bottom: 0vh;
 
 	background-color: #ccc;
 
