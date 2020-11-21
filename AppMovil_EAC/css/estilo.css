@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap');
+
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Nerko One', cursive;
+}
+
+header{
+	position: fixed;
+	z-index: 10;
+	top:0;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/*flex: 1 1 100%;*/
+
+	width: 100%;
+
+
+	background-color: lightcoral;
+
+	border-radius: 0 0 0 30px;
+}
+
+h1{
+	font-family: 'Balsamiq Sans', cursive;
+}
+
+h3{
+	text-align: center;
+}
+
+.logo{
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.logo-titulo{
+	display:flex;
+	padding: 10px;
+}
+
+.caja-busqueda{
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+#celdas-eac{
+	position: absolute;
+	top: 102px;
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+	padding: 10px;
+
+
+}
+
+.item{
+	flex: 1 1 30%;
+
+	border: 1px #ccc solid;
+
+	box-shadow: 1px 2px 4px rgba(0,0,0,0.3);
+
+	padding: 10px;
+
+	margin: 5px;
+}
+.item hr{
+	width:10%;
+	transition: width 0.5s ease;
+}
+
+.hr-rosa{
+	color: #DB0080
+}
+
+.hr-azul{
+	color: #019CDF
+}
+
+.hr-amarillo{
+	color: #FFF001
+}
+
+.item:hover hr{
+	width:60%;
+}
+
+.item:hover{
+	animation: tiembla 0.2s 1;
+}
+
+@-webkit-keyframes tiembla{
+  0%  { -webkit-transform:rotateZ(-5deg); }
+  50% { -webkit-transform:rotateZ( 0deg) scale(.8); }
+  100%{ -webkit-transform:rotateZ( 5deg); }
+}
+
+footer{
+	position:fixed;
+	z-index: 10;
+
+	bottom: 0;
+
+	background-color: #ccc;
+
+	width: 100vw;
+}
+
+footer ul{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	list-style: none;
+}
+
+footer ul li{
+	flex: 1 1 50%;
+
+	border: 2px solid black;
+
+	text-align: center;
+}
+
+footer ul li:hover{
+	cursor: pointer;
+}
