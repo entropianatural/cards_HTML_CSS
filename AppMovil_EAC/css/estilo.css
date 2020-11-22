@@ -81,6 +81,10 @@ h3{
 	transition: width 0.5s ease;
 }
 
+.item a{
+	text-decoration: none;
+}
+
 .hr-rosa{
 	color: #DB0080;
 }
@@ -140,4 +144,8 @@ footer ul li{
 
 footer ul li:hover{
 	cursor: pointer;
+}
+
+footer ul li a{
+	text-decoration: none;
 }

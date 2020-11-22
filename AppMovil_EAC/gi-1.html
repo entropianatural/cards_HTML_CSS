@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" href="css/estilo-gi.css">
+	<title>Document</title>
+</head>
+<body>
+	<header>
+		<div class="logo-titulo">
+			<img class="logo" src="img/escuela_arte.jpg" alt="" width="50">
+			<h3>Enseñanzas <br>	EAC</h3>
+		</div>
+		<div class="box">
+		  <div class="container-1">
+		      <span class="icon"><i class="fa fa-search"></i></span>
+		      <input class="caja-busqueda"type="search" id="search" placeholder="Search..." />
+		  </div>
+		</div>
+	</header>
+
+	<main id="celdas-eac">
+		<section class="content">
+			<article class="item-full">
+				<h1>1º GM Apoyo al Producto Gráfico Interactivo</h1>
+				<h3>Materias:</h3>
+				<ul class="materias">
+					<li class="mat uno"><a href="">Fundamentos de la representación artística</a></li>
+					<li class="mat dos"><a href="">Tipografía</a></li>
+					<li class="mat tres"><a href="">Medios informáticos</a></li>
+					<li class="mat cuatro"><a href="">Historia del diseño gráfico</a></li>
+					<li class="mat cinco"><a href="">Multimedia </a></li>
+					<li class="mat seis"><a href="">Edición Web </a></li>
+					<li class="mat siete"><a href="">Inglés técnico </a></li>
+				</ul>
+			</article>
+		</section>
+	</main>
+
+	<footer>
+		<ul>
+			<li><a href="index.html">Enseñanzas</a></li>
+			<li>Trabajos</li>
+			<li>Talleres</li>
+		</ul>
+	</footer>
+
+	<script type="text/javascript">
+		const uno = document.querySelector('.uno')
+		setTimeout(() => {
+			uno.classList.toggle('mostrar');
+		}, 2000);
+
+		const dos = document.querySelector('.dos')
+		setTimeout(() => {
+			dos.classList.toggle('mostrar');
+		}, 2200);
+
+		const tres = document.querySelector('.tres')
+		setTimeout(() => {
+			tres.classList.toggle('mostrar');
+		}, 2300);
+
+		const cuatro = document.querySelector('.cuatro')
+		setTimeout(() => {
+			cuatro.classList.toggle('mostrar');
+		}, 2400);
+
+		const cinco = document.querySelector('.cinco')
+		setTimeout(() => {
+			cinco.classList.toggle('mostrar');
+		}, 2500);
+
+		const seis = document.querySelector('.seis')
+		setTimeout(() => {
+			seis.classList.toggle('mostrar');
+		}, 2600);
+
+		const siete = document.querySelector('.siete')
+		setTimeout(() => {
+			siete.classList.toggle('mostrar');
+		}, 2700);
+
+	</script>
+	
+</body>
+</html>
