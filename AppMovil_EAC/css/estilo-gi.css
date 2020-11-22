@@ -1,16 +1,23 @@
 
-
 .content{
-	width:100vw;
-	display:flex;
+	width: 100%;
+	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
+
 
 .item-full{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+.item-full h1{
+	text-align: center;
+}
+
+.wave{
+	z-index: -1;
 }
 
 .materias{
@@ -35,22 +42,8 @@
 	display: inline-block;
 
 	width: 100%;
-
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.mat{
-	display: none;
-	width:100%;
-	transition: all 0.5s;
 }
 
 .mat:hover a{
 	background-color: lightgreen;
-}
-
-li.mostrar{
-	display: inline-block;
 }
