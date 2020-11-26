@@ -16,6 +16,50 @@ body{
 
 }
 
+/* Splash */
+#splash {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: black;
+	height: 100vh;
+	width: 100%;
+	z-index: 5;
+	
+	opacity: 1;
+	transition: opacity 1s;
+}
+
+#splash.fade {
+	opacity: 0;
+}
+
+#splash .cont{
+	position:relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#splash .colores{
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 50px;
+	height: 50px;
+
+	background-image: url("../img/colores.png");
+	background-size: cover;
+}
+
+#splash h1{
+	color: white;
+	font-size: 2em;
+	font-weight: 500;
+}
+
 header{
 	position: fixed;
 	z-index: 10;
@@ -32,6 +76,10 @@ header{
 	/*background-color: lightcoral;*/
 
 	/*border-radius: 0 0 0 30px;*/
+}
+
+.esconder{
+	opacity:0;
 }
 
 h1{
@@ -95,6 +143,10 @@ h3{
 .item a{
 	color: rgba(255,255,255,0.8);
 }
+
+/*.item a:visited{
+	color: rgba(255,255,255,0.8);
+}*/
 
 .item img{
 	position:absolute;

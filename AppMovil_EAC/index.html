@@ -8,6 +8,15 @@
 	<title>Document</title>
 </head>
 <body>
+	<div id="splash">
+		<div class="cont">
+			<div class="colores">
+				<!-- imagen de fondo con los colores de la escuela -->
+				<img class="logo" src="img/escuela_arte.jpg" alt="" width="70"/>
+			</div>
+			<h1>Escuela Arte Ceuta</h1>
+		</div>
+	</div>
 	<header>
 		<div class="logo-titulo">
 			<img class="logo" src="img/escuela_arte.jpg" alt="" width="50">
@@ -94,6 +103,18 @@
 			</li>
 		</ul>
 	</footer>
+
+	<script type="text/javascript">
+			var header = document.getElementsByTagName("HEADER")[0];
+			var footer = document.getElementsByTagName("FOOTER")[0];
+			header.className += " esconder";
+			footer.className += " esconder";
+			setTimeout(() => {
+				document.getElementById('splash').classList.toggle('fade');
+				header.className = "";
+				footer.className = "";
+			}, 6000);
+	</script>
 	
 </body>
 </html>
