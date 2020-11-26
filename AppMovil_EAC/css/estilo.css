@@ -9,7 +9,7 @@
 
 body{
 	font-family: 'Nerko One', cursive;
-	background-image: url("../img/fondo_1.png");
+	background-image: url("../img/fondo_2.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 100vh; 
@@ -86,7 +86,14 @@ h3{
 
 	position:relative;
 
-	background-color: white;
+	background-color: rgba(255,255,255,0.8);
+	background-color: rgba(1,1,1,0.8);
+
+	color: rgba(255,255,255,0.8);
+}
+
+.item a:visited{
+	color: rgba(255,255,255,0.8);
 }
 
 .item img{
@@ -102,7 +109,6 @@ h3{
 }
 
 .item a{
-	
 	text-decoration: none;
 }
 
@@ -142,8 +148,6 @@ footer{
 	/* para que se ajuste al fondo de cada pantalla*/
 	bottom: 0vh;
 
-	background-color: #ccc;
-
 	width: 100vw;
 }
 
@@ -158,9 +162,18 @@ footer ul{
 footer ul li{
 	flex: 1 1 50%;
 
-	border: 2px solid black;
-
 	text-align: center;
+
+	background-color: rgba(1,1,1,0.8);
+
+
+
+
+	border-right: 1px dotted grey; 
+}
+
+footer ul li:last-child{
+	border-right: 0;
 }
 
 footer ul li:hover{
@@ -169,4 +182,22 @@ footer ul li:hover{
 
 footer ul li a{
 	text-decoration: none;
+	color: white;
+
+	/* FLEX */
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+
+	justify-content: center;
 }
+
+footer ul li a:hover{
+	background-color: black;
+}
+
+footer ul li img{
+	transform: rotate(-90deg);
+}
+
