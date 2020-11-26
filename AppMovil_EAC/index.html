@@ -12,108 +12,20 @@
 		<div class="cont">
 			<div class="colores">
 				<!-- imagen de fondo con los colores de la escuela -->
-				<img class="logo" src="img/escuela_arte.jpg" alt="" width="70"/>
+				<img class="logo-splash" src="img/escuela_arte.jpg" alt=""/>
 			</div>
 			<h1>Escuela Arte Ceuta</h1>
 		</div>
 	</div>
-	<header>
-		<div class="logo-titulo">
-			<img class="logo" src="img/escuela_arte.jpg" alt="" width="50">
-			<h3>Enseñanzas <br>	EAC</h3>
-		</div>
-		<div class="box">
-		  <div class="container-1">
-		      <span class="icon"><i class="fa fa-search"></i></span>
-		      <input class="caja-busqueda"type="search" id="search" placeholder="Search..." />
-		  </div>
-		</div>
-	</header>
-
-	<main id="celdas-eac">
-		<article class="item">
-			<a href="gi-1.html">
-				<img src="img/adornoEAC.png" alt="">
-				<h1>1º GM APGI</h1>
-				<hr class="hr-rosa">
-				<p>Asistencia al producto gráfico interactivo</p>
-			</a>
-		</article>
-		<article class="item">
-			<a href="gi-1.html">
-				<img src="img/adornoEAC.png" alt="">
-				<h1>2º GM APGI</h1>
-				<hr class="hr-azul">
-				<p>Asistencia al producto gráfico interactivo</p>
-			</a>
-		</article>
-		<article class="item">
-			<a href="gi-1.html">
-				<img src="img/adornoEAC.png" alt="">
-				<h1>1ª Bach</h1>
-				<hr class="hr-amarillo">
-				<p>Bachillerato Artístico</p>
-			</a>
-		</article>
-		<article class="item">
-			<a href="gi-1.html">
-				<img src="img/adornoEAC.png" alt="">
-				<h1>2º Bach</h1>
-				<hr class="hr-azul">
-				<p>Bachillerato Artístico</p>
-			</a>
-		</article>
-		<article class="item">
-			<a href="gi-1.html">
-				<img src="img/adornoEAC.png" alt="">
-				<h1>1º GI</h1>
-				<hr class="hr-rosa">
-				<p>Gráfica Interactiva</p>
-			</a>
-		</article>
-		<article class="item">
-			<a href="gi-1.html">
-				<img src="img/adornoEAC.png" alt="">
-				<h1>2º GI</h1>
-				<hr class="hr-amarillo">
-				<p>Gráfica Interactiva</p>
-			</a>
-		</article>
-	</main>
-
-	<footer>
-		<ul>
-			<li>
-				<a href="index.html">
-					<img src="img/adornoEAC.png" alt="">
-					<span>Enseñanzas</span>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<img src="img/adornoEAC.png" alt="">
-					<span>Trabajos</span>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<img src="img/adornoEAC.png" alt="">
-					<span>Talleres</span>
-				</a>
-			</li>
-		</ul>
-	</footer>
 
 	<script type="text/javascript">
-			var header = document.getElementsByTagName("HEADER")[0];
-			var footer = document.getElementsByTagName("FOOTER")[0];
-			header.className += " esconder";
-			footer.className += " esconder";
+
 			setTimeout(() => {
-				document.getElementById('splash').classList.toggle('fade');
-				header.className = "";
-				footer.className = "";
-			}, 6000);
+
+				// document.getElementById('splash').classList.toggle('fade');
+
+				window.open("ensenyanzas.html", "_self");
+			}, 2000);
 	</script>
 	
 </body>

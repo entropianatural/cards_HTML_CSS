@@ -18,13 +18,13 @@ body{
 
 /* Splash */
 #splash {
-	position: absolute;
-	top: 0;
-	left: 0;
+	position: relative;
+	/*top: 0;
+	left: 0;*/
 	background: black;
 	height: 100vh;
 	width: 100%;
-	z-index: 5;
+	/*z-index: 5;*/
 	
 	opacity: 1;
 	transition: opacity 1s;
@@ -35,18 +35,16 @@ body{
 }
 
 #splash .cont{
-	position:relative;
+
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+
+	height:100%;
 }
 
 #splash .colores{
-	position: absolute;
-	top: 0;
-	left: 0;
-
 	width: 50px;
 	height: 50px;
 
@@ -59,6 +57,24 @@ body{
 	font-size: 2em;
 	font-weight: 500;
 }
+
+.logo-splash{
+	width:100%;
+
+	animation-name: desplazaderecha;
+  	animation-duration: 3s;
+}
+
+@keyframes desplazaderecha{
+	from{
+		transform: translateX(0);
+	}
+	to{
+		transform: translateX(10px);
+	}
+}
+
+
 
 header{
 	position: fixed;
@@ -109,18 +125,22 @@ h3{
 	width:100vw;
 	position: absolute;
 	top: 102px;
+	
+	
+	/*padding: 10px;*/
+}
+
+.ense{
 	display:flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	
-	/*padding: 10px;*/
-
-
 }
 
 .item{
 	flex: 1 1 30%;
+
+	min-height: 150px;
 
 	border: 1px #ccc solid;
 
@@ -217,8 +237,6 @@ footer ul li{
 	text-align: center;
 
 	background-color: rgba(1,1,1,0.8);
-
-
 
 
 	border-right: 1px dotted grey; 
