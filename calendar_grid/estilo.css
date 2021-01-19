@@ -1,0 +1,124 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+.header-mes{
+	max-width: 1400px;
+	width: 90%;
+	margin: auto;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	font-family: 'Fredericka the Great', cursive;
+	font-weight: bold;
+	font-size: 2em;
+	margin-bottom: 1em;
+}
+
+.header-mes > .logo{
+	display: flex;
+	align-items: center;	
+}
+
+.header-mes .logo > span{
+	margin-left: 20px;
+}
+
+.header-mes > span{
+	margin: 0 10px;
+}
+
+.mes-content{
+	align-self: flex-end;
+}
+
+.calendario{
+	max-width: 1400px;
+	width: 90%;
+	margin: auto;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-auto-rows: minmax(auto,max-content);
+	grid-gap: 10px;
+}
+
+.d1{
+	grid-column: 1/2;
+}
+
+
+/* tamaños mayores que 500px actua este código*/
+@media (min-width: 500px){
+	.calendario{
+		grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+	}
+	.d1{
+		grid-column: 1/2;
+	}
+}
+
+/* tamaños mayores que 700px actua este código*/
+@media (min-width: 1200px){
+	.calendario{
+		grid-template-columns: repeat(7, minmax(150px,1fr));
+	}
+	.d1{
+		grid-column: 5/6;
+	}
+}
+
+.patron{
+	background-color: #DFDBE5;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+
+.card-dia{
+	border-radius: 15px;
+	text-decoration: none;
+	position: relative;
+	top:0;
+	transition: all 0.1s ease-out;
+
+	background-color: #B6B0B0;
+	-webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.49); 
+	box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.49);
+
+	/*display: flex;
+	flex-direction: column;*/
+
+}
+
+
+.card-dia:hover{
+	top:-10px;
+}
+
+.card-dia > .dia{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 3em;
+    z-index:1;
+}
+
+.card-dia-content{
+	border-radius: 15px;
+	min-height: 100%;
+	flex:1;
+}
+
+.card-dia-content > img{
+	width: 50%;
+	height: 50%;
+	object-fit: cover;
+	margin-top: 5px;
+	padding: 10px;
+}
+
+.card-dia-content > p{
+	margin: 15px 10px;
+	text-align: justify;
+}
