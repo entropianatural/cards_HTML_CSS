@@ -9,10 +9,11 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 
 	font-family: 'Fredericka the Great', cursive;
 	font-weight: bold;
-	font-size: 2em;
+	font-size: 1em;
 	margin-bottom: 1em;
 }
 
@@ -31,6 +32,13 @@
 
 .mes-content{
 	align-self: flex-end;
+	display:flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	margin-top: 20px;
+
+	border-bottom: 1px solid black;
 }
 
 .calendario{
@@ -57,15 +65,27 @@
 	.d1{
 		grid-column: 1/2;
 	}
+	.header-mes{
+		font-size: 1.3em;
+		flex-wrap: wrap;
+	}
+	.mes-content{
+		width: 100%;
+		
+	}
+
 }
 
 /* tamaños mayores que 700px actua este código*/
-@media (min-width: 1200px){
+@media (min-width: 1000px){
 	.calendario{
 		grid-template-columns: repeat(7, minmax(150px,1fr));
 	}
 	.d1{
 		grid-column: 5/6;
+	}
+	.header-mes{
+		font-size: 2em;
 	}
 }
 
