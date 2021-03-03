@@ -46,13 +46,6 @@ header p span:hover {
   
 }
 
-.menu-flotante{
-	position: fixed;
-	right:0;
-	top: 50%;
-	padding: 20px;
-}
-
 .cat-container {
     width: 100%;
     max-width: 1280px;
@@ -138,37 +131,6 @@ header p span:hover {
 
 .titulo-carteles span{
 	padding-top: 30px;
-}
-
-
-footer {
-  padding: 4em;
-  text-align: center;
-  
-}
-footer p {
-  font-family: 'Amatic SC', cursive;
-  font-size: 1.7rem;
-}
-
-footer p span {
-  color: #0099cc;
-  font-weight: 800;
-}
-
-footer p a {
-  font-weight: 600;
-}
-
-footer .contact-info{
-	margin-top: 50px;
-	display: inline-block;
-	padding: 30px;
-	border: 2px solid black;
-}
-
-footer .contact-info p{
-	font-size: 1.3rem;
 }
 
 @media only screen and (max-width: 520px) {
