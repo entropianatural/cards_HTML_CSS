@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
@@ -20,16 +21,25 @@ ul {
     list-style: none;
 }
 
-a {
+/*a {
   text-decoration: none;
   color: #D5012A;
-}
+}*/
 
 header {
     padding: 2em 4em;
     text-align: center;
     font-family: 'Amatic SC', cursive;
 }
+
+header div{
+  display: flex;
+}
+
+header div img{
+  width: 50px;
+}
+
 header h1 {
     font-size: var(--h1-size);
 }
@@ -39,16 +49,35 @@ header p {
   
 }
 header p span {
-  color: #D5012A;
   font-weight: 800;
 }
-header p span:hover {
-  
+
+header p .magenta{
+  color: #0099cc;
+} 
+
+header p .azul{
+  color: #D5012A;
+} 
+
+header p .mostaza{
+  color: #FF9911;
+} 
+.descripcion h1{
+  text-align: center;
+}
+.descripcion article{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  grid-gap: 20px;
+  padding: 90px;
+  margin-bottom: 40px;
+  text-align: justify;
 }
 
 .cat-container {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 2em;
     font-family: 'Fira Sans Condensed', sans-serif;
@@ -57,8 +86,8 @@ header p span:hover {
 .gallery {
     display: grid;
     grid-gap: 1em;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-auto-rows: 300px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 250px;
     grid-auto-flow: dense;
     
 }
@@ -106,8 +135,6 @@ header p span:hover {
 	grid-row: span 2;
 }
 
-
-
 .col-2-row2{
 	grid-column: span 2;
 	grid-row: span 2;
@@ -117,6 +144,32 @@ header p span:hover {
   width: 100%;
   height: 100%;
   transition: .5s;
+}
+
+.menu-botones{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-botones a{
+  border-radius: 12px;
+  background-color: #D5012A;
+  padding: 10px 15px;
+  margin: 0 20px;
+  color: white;
+  box-shadow: 7px 7px 37px -2px rgba(0,0,0,0.5);
+}
+
+.menu-botones a:hover{
+  box-shadow: 7px 7px 37px -2px rgba(0,0,0,0.93);
+  color: #FF9911;
+}
+
+.menu-botones a .btn{
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .titulo-carteles{
@@ -133,7 +186,7 @@ header p span:hover {
 	padding-top: 30px;
 }
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 600px) {
   header, footer {
     padding: 2em;
   }
@@ -144,7 +197,10 @@ header p span:hover {
     font-size: 1.6rem;
   }
   .col-2-row2{
-	grid-column: span 1;  
-   }
+	   grid-column: span 1;  
+  }
+  .descripcion article{
+    padding: 40px;
+  }
 
 }

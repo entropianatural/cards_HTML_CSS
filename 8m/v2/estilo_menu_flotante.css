@@ -15,6 +15,7 @@
   border-radius: 12px 0 0 12px;
   box-shadow: -9px 4px 32px -2px rgba(0,0,0,0.5);
   
+  z-index: 1;
 }
 
 .menu-flotante:hover{
@@ -49,6 +50,7 @@ footer p span {
 }
 
 footer p a {
+  color: #D5012A;
   font-weight: 600;
 }
 
@@ -87,4 +89,16 @@ footer .contact-info .mail{
 footer .contact-info .mail{
   display: flex;
   align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .menu-flotante{
+    opacity: 0.3;
+  }
+
+  .menu-flotante:hover{
+    opacity: 1;
+  }
+
 }
