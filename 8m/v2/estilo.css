@@ -63,9 +63,17 @@ header p .azul{
 header p .mostaza{
   color: #FF9911;
 } 
+
+.descripcion{
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+}
+
 .descripcion h1{
   text-align: center;
 }
+
 .descripcion article{
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
@@ -81,6 +89,18 @@ header p .mostaza{
     margin: 0 auto;
     padding: 2em;
     font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+.cat-container .btn-subir{
+  margin-top: 50px;
+  font-size: 3em;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cat-container .btn-subir a{
+  color: #D5012A;
 }
 
 .gallery {
@@ -150,6 +170,7 @@ header p .mostaza{
   display:flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .menu-botones a{
@@ -176,10 +197,11 @@ header p .mostaza{
 	display:flex;
 	justify-content: center;
 	align-items: center;
-    /*padding: 2em 4em;*/
+    /*padding: 0 2em;*/
     text-align: center;
     font-family: 'Amatic SC', cursive;
     font-size: 5rem;
+    margin-top: 100px;
 }
 
 .titulo-carteles span{
@@ -200,7 +222,12 @@ header p .mostaza{
 	   grid-column: span 1;  
   }
   .descripcion article{
-    padding: 40px;
+    padding: 30px;
   }
+  .titulo-carteles{
+    font-size: 4rem;
+  }
+
+
 
 }
